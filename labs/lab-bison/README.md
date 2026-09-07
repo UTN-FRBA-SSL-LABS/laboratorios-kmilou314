@@ -1,6 +1,6 @@
 # Laboratorio: Introducción a Bison
 
-**Nombre:** ___________________________
+**Nombre:** Camilo Sosa
 
 ## Verificación y calificación
 
@@ -163,11 +163,11 @@ Abrí `ejercicio3/parser3.y` y completá los cinco `TODO`:
 ### Cómo probar
 
 ```bash
-cd ejercicio3
-bison -d parser3.y
-flex scanner3.l
-gcc lex.yy.c parser3.tab.c -o calc3 -lm
-./calc3 < entrada.txt
+   cd ejercicio3
+   bison -d parser3.y
+   flex scanner3.l
+   gcc lex.yy.c parser3.tab.c -o calc3 -lm
+   ./calc3 < entrada.txt
 ```
 
 Salida esperada:
@@ -224,21 +224,21 @@ Respondé cada pregunta reemplazando el espacio en blanco con la opción correct
 Opciones: `SHIFT` | `REDUCE` | `ERROR`
 
 ```
-P1=
+P1=SHIFT
 ```
 
 **P2** — ¿Las declaraciones `%left`/`%right` que aparecen **más abajo** en el archivo tienen mayor precedencia?
 Opciones: `SI` | `NO`
 
 ```
-P2=
+P2=SI
 ```
 
 **P3** — ¿`yyerrok` resetea el estado de error de Bison para que el parser pueda continuar normalmente después de una regla de recuperación?
 Opciones: `SI` | `NO`
 
 ```
-P3=
+P3=NO
 ```
 
 ---
